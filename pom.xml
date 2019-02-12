@@ -46,6 +46,17 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+            <plugin>
+				<groupId>org.flywaydb</groupId>
+				<artifactId>flyway-maven-plugin</artifactId>
+				<version>5.1.4</version>
+				<configuration>
+					<url>jdbc:mysql://localhost:3307/gerador-carga?useSSL=false</url>
+					<driver>com.mysql.jdbc.Driver</driver>
+					<user>root</user>
+					<password>123</password>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 
